@@ -37,7 +37,7 @@ static int arm7a_l2x_sanity_check(struct target *target)
 	}
 
 	if (!l2x_cache || !l2x_cache->base) {
-		LOG_ERROR("l2x is not configured!");
+		LOG_DEBUG("l2x is not configured!");
 		return ERROR_FAIL;
 	}
 
